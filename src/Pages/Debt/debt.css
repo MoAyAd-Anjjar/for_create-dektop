@@ -1,0 +1,169 @@
+/* CSS for centering and styling DebtModel */
+.debt-model-container {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 99%;
+  height: 100%;
+  background: rgb(35 34 34 / 16%);
+  z-index: 1000;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.debt-model {
+  font-family: Arial, sans-serif;
+  box-shadow: 6px 5px 15px rgba(0, 0, 0, 0.3);
+  /* Enhanced box shadow for depth */
+  border-radius: 10px;
+  max-width: 400px;
+  width: 100%;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  /* Added padding for content inside the modal */
+  position: relative;
+  /* To position the close button */
+}
+
+/* Close button styling */
+.debt-model .close-button {
+  position: absolute;
+  top: -15px;
+  right: -12px;
+  background-color: #ff5f5f;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 18px;
+  /* color: black; */
+  font-weight: bold;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  line-height: 20px;
+  text-align: center;
+}
+
+.button-debt div{
+  display: flex;
+    width: 201px;
+    height: 76%;
+  display: flex;
+  align-items: stretch !important;
+}
+
+
+.debt-model h2.hidder {
+  margin-top: 0;
+  /* Remove padding above the header */
+  background-color: #50bb93e3;
+  /* Background color for header */
+  color: white;
+  /* White text color for better contrast */
+  text-align: center;
+  padding: 10px 0;
+  /* Added padding for header text */
+  border-radius: 10px;
+  /* Rounded top corners */
+}
+
+
+
+.debt-model form {
+  display: flex;
+  color: black;
+  direction: rtl;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.debt-model form div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.debt-model form select {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 177px;
+  padding: 6px;
+}
+
+.debt-model label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.debt-model input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.debt-model input:focus {
+  outline: none;
+  border-color: #00c5db;
+  /* Highlight input border on focus */
+}
+
+/* Optional: Add transitions for smooth visual effects */
+.debt-model,
+.debt-model-container {
+  transition: all 0.3s ease;
+}
+
+
+
+/* CSS */
+.button-5 {
+  align-items: center;
+  background-clip: padding-box;
+  background-color: #e86b2882;
+  border: 1px solid transparent;
+  border-radius: .25rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 1.25;
+  margin: 0;
+  min-height: 3rem;
+  padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+  position: relative;
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  width: auto;
+}
+
+.button-5:hover,
+.button-5:focus {
+  background-color: #fb8332;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+}
+
+.button-5:hover {
+  transform: translateY(-1px);
+  background-color: #fb8332;
+}
+
+.button-5:active {
+  background-color: #c85000;
+  box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
+  transform: translateY(0);
+}

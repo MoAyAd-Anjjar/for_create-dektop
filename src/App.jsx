@@ -1,10 +1,9 @@
-import { useState } from 'react'
+import { useState,useEffect } from 'react'
 import './App.css'
 import MainPage from './Pages/main-item-view'
 
 function App() {
-
-
+ 
   return (
     <>
       <MainPage></MainPage>

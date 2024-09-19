@@ -1,18 +1,170 @@
 .main-container {
+  display: flex;
+  justify-content: space-between;
+  width: 1534.5px;
+  height: 99.5vh;
+  background: #e0dedd;
+}
+
+.action-style {
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  width: 557px;
+  height: 99.5vh; /* Adjusted to match the screen height */
+  justify-content: space-between;
+  flex-direction: column;
+}
+.view-style{
+  display: flex;
+  height: 99.5vh;
+  width: 1000px;
+  justify-content: center;
+  align-items: center;
+  
+}
+.exist-items-1 {
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px;
+  overflow: hidden;
+}
+
+.exist-items-2 {
+  background-color: rgb(234, 230, 230);
+  width: 1050px;
+  max-width: 1000px;
+  height: 99vh; /* Adjusted to match the screen height */
+}
+
+.view-styel {
+  background-color: rgb(105, 28, 28);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px;
+  height: 99.5vh;
+  overflow: hidden;
+}
+
+.exist-items-1 div{
+  padding: 10px;
     display: flex;
-    height: 100vh;
-  }
-  
-  .left-section {
-    flex: 1;
-    padding: 20px;
-    background-color: #f0f0f0;
-  }
-  
-  .right-section {
-    flex: 1;
-    padding: 20px;
-    background-color: #ffffff;
-    border-left: 1px solid #ccc;
-  }
-  
+    width: -webkit-fill-available;
+    flex-direction: column;
+}
+.action-style .info{
+  display: flex;
+  padding: 10px;
+  /* width: -webkit-fill-available; */
+  width: 530px;
+  justify-content: space-between;
+
+}
+.item-info div{
+  border-bottom: 3px dashed;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+}
+
+.under {
+  display: flex;
+  background-color: #3f70ca;
+  height: 120px;
+  width: 100%; /* Use 100% instead of -webkit-fill-available for better compatibility */
+  color: white;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+
+.item-view-style{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+.item-view-style img{
+  width: 107px;
+  padding: -3px;
+  border: 1px solid;
+  margin: 8px;
+  background-color: white;
+}
+.wrapper {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+    
+}
+
+
+
+.webcam-overlay {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999; /* Ensures it's above all other components */
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.75); /* Optional: adds a semi-transparent background */
+  border: 5px solid yellow; /* Yellow border */
+  border-radius: 10px;
+}
+
+.webcam {
+  width: 640px;
+  height: 480px;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+
+
+
+
+.button-36 {
+  margin-top: 7px;
+  padding: 12px 26px;
+  padding-bottom: 18px;
+  border: 0;
+  font-size: 16px;
+  transition: all 150ms ease-in-out;
+  border-radius: 20px;
+  color: #071432;
+  font-weight: bold;
+  background: #fff;
+  box-shadow: rgb(57 53 53) 0 2px 8px 0, inset 0px -6px 0px rgb(193 137 137 / 32%), inset 0px -20px 11px 0px rgb(173 173 173);
+}
+.button-36:hover {
+  filter: brightness(0.98);
+}
+
+.button-36:active {
+  filter: brightness(0.97);
+  padding-top: 15px;
+  padding-bottom: 15px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0 2px 6px 0, inset 0px -1px 0px rgba(0, 0, 0, 0.15);
+}
+.under-button{
+  display: flex;
+  width: -webkit-fill-available;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 6px
+}

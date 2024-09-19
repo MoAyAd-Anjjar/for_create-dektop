@@ -1,11 +1,13 @@
 {
-  "name": "my-electron-app",
+  "name": "casher",
   "description": "A simple Electron app built with Vite and React.",
   "author": "hiko",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "main": "electron/main.js",
+  "homepage": ".",
+  "icon": "./Images/download-256x256.icns",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -17,26 +19,31 @@
   "dependencies": {
     "concurrently": "^8.2.2",
     "cross-env": "^7.0.3",
+    "mongodb": "^6.8.0",
+    "quagga": "^0.12.1",
     "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react-dom": "^18.3.1",
+    "react-icons": "^5.3.0",
+    "react-toastify": "^10.0.5",
+    "react-webcam": "^7.2.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.9.0",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
     "@vitejs/plugin-react": "^4.3.1",
+    "electron": "^32.0.1",
+    "electron-builder": "^24.13.3",
     "eslint": "^9.9.0",
     "eslint-plugin-react": "^7.35.0",
     "eslint-plugin-react-hooks": "^5.1.0-rc.0",
     "eslint-plugin-react-refresh": "^0.4.9",
     "globals": "^15.9.0",
-    "vite": "^5.4.1",
-    "electron": "^32.0.1",
-    "electron-builder": "^24.13.3"
+    "vite": "^5.4.1"
   },
   "build": {
     "appId": "com.example.app",
-    "productName": "MyElectronApp",
+    "productName": "Casher",
     "directories": {
       "buildResources": "assets"
     },
@@ -44,9 +51,12 @@
       "dist/**/*",
       "electron/**/*"
     ],
+    "asarUnpack": [
+      "dist/win-unpacked/Images"  
+    ],
     "win": {
       "target": "nsis",
-      "icon": "assets/icon.ico"
+      "icon": "./src/assets/favicon.ico"
     },
     "mac": {
       "target": "dmg",

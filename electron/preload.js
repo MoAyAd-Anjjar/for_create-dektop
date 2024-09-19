@@ -1,5 +1,11 @@
-const { contextBridge } = require('electron');
+/* eslint-disable no-undef */
+const { contextBridge, ipcRenderer } = require('electron');
 
-contextBridge.exposeInMainWorld('myAPI', {
-  // Add your APIs here
+
+contextBridge.exposeInMainWorld('electron', {
+  fetchData: () => ipcRenderer.invoke('fetch-data'),
+  insertData: (item) => ipcRenderer.invoke('insert-data', item),
+  fetchCostumersNames: () => ipcRenderer.invoke('fetch-Customers-Names'),
+  getimgpath: (productName) => ipcRenderer.invoke('GETIMG', productName),
+
 });
