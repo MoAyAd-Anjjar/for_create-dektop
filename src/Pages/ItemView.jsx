@@ -21,6 +21,12 @@ const ItemView = () => {
         Items.includes(itm.productBarcode)
       );
       setItemsView(filteredItems);
+      
+      
+      
+
+
+      
     } else {
       setItemsView([]);
     }
@@ -59,9 +65,9 @@ const ItemView = () => {
   return (
     <div className={"view-style"}>
       {itemsView.length > 0 ? (
-        <div className="wrapper">
+        <div className="wrapper" >
           {itemsView.map((item) => (
-            <div key={item.id} className="item-view-style">
+            <div key={item} className="item-view-style">
               <img
                 src={imgPaths[item.productName] || "No Image"}
                 alt={item.productName}

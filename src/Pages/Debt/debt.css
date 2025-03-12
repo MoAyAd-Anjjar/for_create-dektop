@@ -4,7 +4,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  width: 99%;
+  width: -webkit-fill-available;
   height: 100%;
   background: rgb(35 34 34 / 16%);
   z-index: 1000;
@@ -49,14 +49,21 @@
   text-align: center;
 }
 
-.button-debt div{
+.button-debt div {
   display: flex;
-    width: 201px;
-    height: 76%;
+  width: 201px;
+  height: 76%;
   display: flex;
   align-items: stretch !important;
 }
-
+.header {
+  margin-top: 0;
+  background-color: #44ae5c;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  border-radius: 10px;
+}
 
 .debt-model h2.hidder {
   margin-top: 0;
@@ -71,8 +78,6 @@
   border-radius: 10px;
   /* Rounded top corners */
 }
-
-
 
 .debt-model form {
   display: flex;
@@ -114,12 +119,9 @@
 }
 
 /* Optional: Add transitions for smooth visual effects */
-.debt-model,
-.debt-model-container {
+.debt-model {
   transition: all 0.3s ease;
 }
-
-
 
 /* CSS */
 .button-5 {
@@ -127,20 +129,21 @@
   background-clip: padding-box;
   background-color: #e86b2882;
   border: 1px solid transparent;
-  border-radius: .25rem;
+  border-radius: 0.25rem;
   box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
   box-sizing: border-box;
   color: #fff;
   cursor: pointer;
   display: inline-flex;
-  font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: system-ui, -apple-system, system-ui, "Helvetica Neue", Helvetica,
+    Arial, sans-serif;
   font-size: 16px;
   font-weight: 600;
   justify-content: center;
   line-height: 1.25;
   margin: 0;
   min-height: 3rem;
-  padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+  padding: calc(0.875rem - 1px) calc(1.5rem - 1px);
   position: relative;
   text-decoration: none;
   transition: all 250ms;
@@ -164,6 +167,6 @@
 
 .button-5:active {
   background-color: #c85000;
-  box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
+  box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
   transform: translateY(0);
 }

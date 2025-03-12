@@ -45,8 +45,11 @@ const DataProvider = ({ children }) => {
 
   // Function to add items to the state
   const addItem = (item) => {
+   console.log(item);
    
     setItems((prevItems) => [...prevItems, item]);
+
+
   };
   const clearitems = () => {
     
@@ -56,7 +59,7 @@ const DataProvider = ({ children }) => {
  
 
   return (
-    <DataContext.Provider value={{ Items, addItem ,DebtUser,clearitems,getAllData,}}>
+    <DataContext.Provider value={{ Items, addItem ,DebtUser,clearitems,getAllData}}>
       {children}
     </DataContext.Provider>
   );

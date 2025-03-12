@@ -7,6 +7,7 @@ export default defineConfig({
   base: './', // Ensures that relative paths are used in production
   build: {
     outDir: 'dist',
+    external: ['electron', 'fs', 'path'], //
   },
   resolve: {
     alias: {
@@ -14,4 +15,5 @@ export default defineConfig({
       '@': path.resolve(__dirname, 'src'),
     },
   },
+
 });
